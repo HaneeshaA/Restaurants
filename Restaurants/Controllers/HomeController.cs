@@ -26,5 +26,12 @@ namespace Restaurants.Controllers
 
             return View();
         }
+
+        public ActionResult Menu()
+        {
+            ViewBag.Message = "Your Menu page.";
+
+            return View();
+        }
     }
 }
