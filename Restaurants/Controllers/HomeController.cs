@@ -22,7 +22,7 @@ namespace Restaurants.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "We LOVE to hear from our customers! Have something to tell us (good or bad!)? Please reach out to us as shown below..";
 
             return View();
         }
