@@ -218,6 +218,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeShop_Business\CoffeeShop_Business.csproj">
+      <Project>{ca7e3b60-cb1c-4f3b-8fb9-130113b13cbf}</Project>
+      <Name>CoffeeShop_Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoffeeShop_Models\CoffeeShop_Models.csproj">
+      <Project>{f65f61da-b53c-4ae4-9435-e0a33a0c134c}</Project>
+      <Name>CoffeeShop_Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

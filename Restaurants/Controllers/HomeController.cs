@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeShop_Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,6 +30,8 @@ namespace Restaurants.Controllers
 
         public ActionResult Menu()
         {
+            CoffeeMenuBusiness busObj = new CoffeeMenuBusiness();
+            var data = busObj.GetMenuFromDB();
             ViewBag.Message = "Your Menu page.";
 
             return View();
