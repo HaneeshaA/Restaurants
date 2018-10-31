@@ -31,10 +31,10 @@ namespace Restaurants.Controllers
         public ActionResult Menu()
         {
             CoffeeMenuBusiness busObj = new CoffeeMenuBusiness();
-            var data = busObj.GetMenuFromDB();
+            var modeldata = busObj.GetMenu();
             ViewBag.Message = "Your Menu page.";
 
-            return View();
+            return View(modeldata);
         }
     }
 }

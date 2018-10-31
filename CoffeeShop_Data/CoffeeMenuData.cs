@@ -12,8 +12,10 @@ namespace CoffeeShop_Data
 {
     public class CoffeeMenuData
     {
-        public static DataSet GetData()
+        public static List<CoffeeMenuModel> GetMenuFromDB()
         {
+            List<CoffeeMenuModel> returnObjs = new List<CoffeeMenuModel>();
+            
             SqlConnection cnn;
             string sql = null;
             SqlCommand command;
@@ -24,19 +26,35 @@ namespace CoffeeShop_Data
 
             var cs = ConfigurationManager.ConnectionStrings["CoffeeShopConnection"].ConnectionString;
             cnn = new SqlConnection(cs);
-            sql = "Select * from coffeeshop";
+            sql = "select * from coffeeshop;";
 
             //Open the connection
             cnn.Open();
             command = new SqlCommand(sql, cnn);
-            dataReader = command.ExecuteReader();
-            dt.Load(dataReader);
-            dsCoffeeMenu.Tables.Add(dt);
+            dataReader = command.ExecuteReader(CommandBehavior.SequentialAccess);
+
+            while(dataReader.Read())
+            {
+                CoffeeMenuModel returnObj = new CoffeeMenuModel();
+
+                returnObj.CategoryID = dataReader["CategoryID"].ToString();
+                returnObj.ItemName = dataReader["ItemName"].ToString();
+                returnObj.ItemDescription = dataReader["Description"].ToString();
+                returnObj.Price =  dataReader["Price"].ToString();
+
+                returnObjs.Add(returnObj);
+            }
+
+            //dt.Load(dataReader);
+            //dsCoffeeMenu.Tables.Add(dt);
+            //var rows = dsCoffeeMenu.Tables[0].Rows;
+            //var test = rows[0]["CategoryId"];
             dataReader.Close();
             command.Dispose();
             cnn.Close();
 
-            return dsCoffeeMenu;
+            //return dsCoffeeMenu;
+            return returnObjs;
         }
     }
 }

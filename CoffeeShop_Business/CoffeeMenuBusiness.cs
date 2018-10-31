@@ -11,10 +11,10 @@ namespace CoffeeShop_Business
 {
     public class CoffeeMenuBusiness
     {
-        public CoffeeMenuModel GetMenuFromDB()
+        public List<CoffeeMenuModel> GetMenu()
         {
-            var data = CoffeeMenuData.GetData();
-            return new CoffeeMenuModel();
+            var data = CoffeeMenuData.GetMenuFromDB();
+            return data;
         }
     }
 }

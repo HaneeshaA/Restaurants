@@ -1,9 +1,15 @@
-﻿
+﻿@model IEnumerable<CoffeeShop_Models.CoffeeMenuModel>
+
 @{
     ViewBag.Title = "Menu";
 }
 <div>
     <p><a> <img class="aligncenter size-full wp-image-1378 retinized" src="~/Content/Images/page_header_coffeemenu.jpg" alt="page_header_coffeemenu" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></p>
+    @foreach (var item in Model)
+    {
+        <h2>@item.ItemDescription</h2>
+    }
+
     <h2>Unflavored</h2>
     <p>
         <strong>House Blend</strong><br>
