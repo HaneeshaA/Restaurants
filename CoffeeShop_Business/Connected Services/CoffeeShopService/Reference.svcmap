@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7bdbc29d-e5f3-40d2-af10-2c531f97faf2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50378/CoffeeShopService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CoffeeShopService.xsd" MetadataType="Schema" ID="799ef751-5d5e-4054-ba61-9fffd5b52cca" SourceId="1" SourceUrl="http://localhost:50378/CoffeeShopService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CoffeeShopService1.xsd" MetadataType="Schema" ID="5b44f060-5c15-440c-a269-1a9323b07b29" SourceId="1" SourceUrl="http://localhost:50378/CoffeeShopService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CoffeeShopService2.xsd" MetadataType="Schema" ID="f5060554-00a0-400f-829d-ea2dd1cb382b" SourceId="1" SourceUrl="http://localhost:50378/CoffeeShopService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CoffeeShopService.disco" MetadataType="Disco" ID="b086599b-d598-4c83-9af3-1a2db93e907e" SourceId="1" SourceUrl="http://localhost:50378/CoffeeShopService.svc?disco" />
+    <MetadataFile FileName="CoffeeShopService.wsdl" MetadataType="Wsdl" ID="c9316ab4-9f72-43ae-86d9-07c31496adaf" SourceId="1" SourceUrl="http://localhost:50378/CoffeeShopService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

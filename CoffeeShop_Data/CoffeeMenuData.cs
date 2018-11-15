@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using System.Web.Configuration;
 
 namespace CoffeeShop_Data
 {
@@ -23,6 +24,7 @@ namespace CoffeeShop_Data
 
             DataTable dt = new DataTable();
             DataSet dsCoffeeMenu = new DataSet();
+            //var cs = WebConfigurationManager.AppSettings["CoffeeShopConnection"];
 
             var cs = ConfigurationManager.ConnectionStrings["CoffeeShopConnection"].ConnectionString;
             cnn = new SqlConnection(cs);

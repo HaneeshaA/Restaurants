@@ -13,8 +13,17 @@ namespace CoffeeShop_Business
     {
         public List<CoffeeMenuModel> GetMenu()
         {
-            var data = CoffeeMenuData.GetMenuFromDB();
-            return data;
+            List<CoffeeMenuModel> menuResult = new List<CoffeeMenuModel>();
+            
+            //2nd Assignment
+             //menuResult = CoffeeMenuData.GetMenuFromDB();
+
+            //3rd Assignment
+            var coffeeService = new CoffeeShopService.CoffeeShopServiceClient();
+            menuResult = coffeeService.GetData().ToList();
+
+
+            return menuResult;
         }
     }
 }
