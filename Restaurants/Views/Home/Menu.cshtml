@@ -7,9 +7,71 @@
     <p><a> <img class="aligncenter size-full wp-image-1378 retinized" src="~/Content/Images/page_header_coffeemenu.jpg" alt="page_header_coffeemenu" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></p>
     @foreach (var item in Model)
     {
-        <h2>@item.ItemDescription</h2>
+        if (item.CategoryID == "1")
+        {
+            <p>
+                <h2><strong>@item.ItemName</strong><br></h2>
+                @item.ItemDescription &nbsp;&nbsp;&nbsp;<strong>@item.Price</strong>$
+            </p>
+        }
+
     }
 
+    <a><img class="aligncenter size-full wp-image-1381 retinized" src="~/Content/Images/page_header_espresso.jpg" alt="page_header_espresso" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a>
+
+    @foreach (var item in Model)
+    {
+        if (item.CategoryID == "2")
+        {
+            <p>
+                <h2><strong>@item.ItemName</strong><br></h2>
+                @item.ItemDescription &nbsp;&nbsp;&nbsp;<strong>@item.Price</strong>$
+            </p>
+        }
+
+    }
+
+    <p><a><img class="aligncenter size-full wp-image-1382 retinized" src="~/Content/Images/page_header_frozendrinks.jpg" alt="page_header_frozendrinks" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></p>
+    @foreach (var item in Model)
+    {
+        if (item.CategoryID == "3")
+        {
+          <p>
+             <h2><strong>@item.ItemName</strong><br></h2>
+             @item.ItemDescription &nbsp; &nbsp; &nbsp;<strong>@item.Price</strong>$
+            </p>
+        }
+
+    }
+
+    <h2><a><img class="aligncenter size-full wp-image-1380 retinized" src="~/Content/Images/page_header_bakerymenu.jpg" alt="page_header_bakerymenu" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></h2>
+    @foreach (var item in Model)
+    {
+        if (item.CategoryID == "4")
+        {
+            <p>
+                <h2><strong>@item.ItemName</strong><br></h2>
+                @item.ItemDescription &nbsp;&nbsp;&nbsp;<strong>@item.Price</strong>$
+            </p>
+        }
+
+    }
+    <h2><a><img class="aligncenter size-full wp-image-1383 retinized" src="~/Content/Images/page_header_notcoffee.jpg" alt="page_header_notcoffee" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></h2>
+
+    @foreach (var item in Model)
+    {
+        if (item.CategoryID == "5")
+        {
+            <p>
+                <h2><strong>@item.ItemName</strong><br></h2>
+                @item.ItemDescription &nbsp;&nbsp;&nbsp;<strong>@item.Price</strong>$
+            </p>
+        }
+
+    }
+</div>
+
+@*<div>
     <h2>Unflavored</h2>
     <p>
         <strong>House Blend</strong><br>
@@ -29,12 +91,9 @@
     <h2>Decaf Flavors</h2>
     <p>German Coffee Cake, French Vanilla. We always carry decaf seasonal flavors and flavor of the month as well!</p>
 
-</div>
+   </div>
 
 <div>
-
-
-
     <p>
         <a>
             <br>
@@ -56,9 +115,9 @@
     <p>Get creative! Vanilla, Hazelnut, Caramel, Mint, Irish Cream, Cinnamon, Butterscotch, Coconut, Strawberry, Watermelon, Orange, Blueberry, Raspberry. Ghirardelli: Chocolate, Caramel, White Chocolate. Substitute Coconut Milk, Plain or Vanilla Soy Milk, Almond Milk.</p>
     <p><em><strong>Add a shot of expresso to any drink!</strong></em></p>
 
-</div>
+</div>*@
 
-<div>
+@*<div>
     <p><a><img class="aligncenter size-full wp-image-1382 retinized" src="~/Content/Images/page_header_frozendrinks.jpg" alt="page_header_frozendrinks" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></p>
     <h2>Original Cravings</h2>
     <div class="pricelist tf_price">
@@ -108,9 +167,9 @@
     <p>Sausage &amp; Cheese, Bacon &amp; Cheese, Ham &amp; Cheese, Egg &amp; Cheese</p>
     <h3>Oatmeal</h3>
     <p>With brown sugar and raisins.</p>
-</div>
+</div>*@
 
-<div>
+@*<div>
     <h2><a><img class="aligncenter size-full wp-image-1383 retinized" src="~/Content/Images/page_header_notcoffee.jpg" alt="page_header_notcoffee" width="986" height="180" sizes="(max-width: 986px) 100vw, 986px"></a></h2>
     <h3>Iced &amp; Hot Teas</h3>
     <p>
@@ -119,7 +178,7 @@
         Homemade Chai
     </p>
     <p>Add a flavor: raspberry, strawberry, blueberry, watermelon, orange, mint</p>
-    <p><!-- pricelist --></p>
+    <p> pricelist </p>
     <div class="pricelist tf_price">
         <h3>Have a look at our “Not Just for Kids” menu below:</h3>
         <h3>Hot Cocoa</h3>
@@ -134,4 +193,4 @@
         <h3>Smoothies</h3>
         <p>Strawberry</p>
     </div>
-</div>
+</div>*@

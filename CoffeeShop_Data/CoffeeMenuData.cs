@@ -38,8 +38,8 @@ namespace CoffeeShop_Data
             while(dataReader.Read())
             {
                 CoffeeMenuModel returnObj = new CoffeeMenuModel();
-
                 returnObj.CategoryID = dataReader["CategoryID"].ToString();
+                returnObj.CategoryName = dataReader["CategoryName"].ToString();
                 returnObj.ItemName = dataReader["ItemName"].ToString();
                 returnObj.ItemDescription = dataReader["Description"].ToString();
                 returnObj.Price =  dataReader["Price"].ToString();
