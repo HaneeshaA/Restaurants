@@ -16,7 +16,7 @@ namespace CoffeeShop_Business
             List<CoffeeMenuModel> menuResult = new List<CoffeeMenuModel>();
             
             //2nd Assignment
-             //menuResult = CoffeeMenuData.GetMenuFromDB();
+            //menuResult = CoffeeMenuData.GetMenuFromDB();
 
             //3rd Assignment
             var coffeeService = new CoffeeShopService.CoffeeShopServiceClient();
